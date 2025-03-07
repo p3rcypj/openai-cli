@@ -68,7 +68,7 @@ function main() {
             "",
             topicsDescription(topics),
         ]),
-        version: "0.0.1",
+        version: "0.0.2",
         cmds: {
             helloWorld: helloWorldCmd,
             generic: genericCmd,
@@ -87,6 +87,11 @@ function main() {
     });
 
     const args = process.argv.slice(2);
+
+    if (process.env.API_KEY) {
+        args.push(`--apiKey=${process.env.API_KEY}`);
+    }
+
     run(cliSubcommands, args);
 }
 

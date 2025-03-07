@@ -1,6 +1,6 @@
 {
     "name": "openai-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A tool for using OpenAI's GPTs on command line",
     "main": "./build/index.js",
     "author": "p3rcypj",
@@ -9,7 +9,7 @@
         "tsc": "tsc --build",
         "clean": "rm -rf build",
         "build": "yarn clean && yarn tsc",
-        "start": "yarn build && node ./build/index.js",
+        "start": "node --env-file=.env.local ./build/index.js",
         "start-debug": "yarn build && node --inspect ./build/index.js",
         "test": "jest",
         "lint": "eslint './src/**/*.{js,ts,tsx}'",
