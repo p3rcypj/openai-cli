@@ -16,6 +16,7 @@ import helloWorldCmd from "./commands/hello-world";
 import translateCmd from "./commands/translate/translate";
 import translateEsEnCmd from "./commands/translate/translate-es-en";
 import translateEnEsCmd from "./commands/translate/translate-en-es";
+import spellCheckerCmd from "./commands/spell-checker/spell-checker";
 
 const topics = [
     {
@@ -89,6 +90,7 @@ function main() {
             translate: translateCmd,
             translateEsEn: translateEsEnCmd,
             translateEnEs: translateEnEsCmd,
+            spellCheckerCmd: spellCheckerCmd,
         },
     });
 
