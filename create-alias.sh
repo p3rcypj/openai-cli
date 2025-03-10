@@ -38,11 +38,11 @@ function gpt() {
 }
 '
 
-# Check if the function is already in .bashrc
-# if grep -q 'function gpt()' ~/.bashrc; then
-#     echo "The function 'gpt' is already defined in your .bashrc file."
-#     exit 0
-# fi
+Check if the function is already in .bashrc
+if grep -q 'function gpt()' ~/.bashrc; then
+    echo "The function 'gpt' is already defined in your .bashrc file."
+    exit 0
+fi
 
 # Ask for confirmation
 read -p "Do you want to add the 'gpt' function to your .bashrc file? (y/n): " confirm
