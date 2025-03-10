@@ -13,6 +13,9 @@ import surfCmd from "./commands/web-search/surf";
 import rankCmd from "./commands/web-search/rank";
 import webCmd from "./commands/web-search/web";
 import helloWorldCmd from "./commands/hello-world";
+import translateCmd from "./commands/translate/translate";
+import translateEsEnCmd from "./commands/translate/translate-es-en";
+import translateEnEsCmd from "./commands/translate/translate-en-es";
 
 const topics = [
     {
@@ -83,6 +86,9 @@ function main() {
             surf: surfCmd,
             rank: rankCmd,
             web: webCmd,
+            translate: translateCmd,
+            translateEsEn: translateEsEnCmd,
+            translateEnEs: translateEnEsCmd,
         },
     });
 
