@@ -39,7 +39,7 @@ export class Completions {
             model: args.model ?? defaults.model,
             maxTokens: args.maxTokens ?? defaults.maxTokens,
             temperature: args.temperature ?? defaults.temperature,
-            openai: new OpenAI({ apiKey: args.apiKey, organization: args.organisationID }),
+            openai: new OpenAI({ apiKey: args.apiKey, organization: args.organizationId }),
         });
     }
 
