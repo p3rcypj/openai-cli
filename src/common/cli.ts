@@ -2,7 +2,7 @@ import { flag, number, option, optional, string } from "cmd-ts";
 
 export type OpenAIArgs = {
     apiKey: string;
-    organisationID?: string;
+    organizationId?: string;
 };
 
 export function getOpenAIOptions() {
